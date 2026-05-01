@@ -256,6 +256,34 @@ export const TIMELINE_DATA = [
 
 export const PROJECT_CATEGORIES = ['All', 'Residential', 'Commercial', 'Industrial']
 
+// YouTube video IDs — replace with your actual video IDs
+export const VIDEO_DATA = [
+  {
+    id: 'v1',
+    title: 'Our Story: Building Georgia',
+    description: 'From a small team of 8 to Georgia\'s leading construction firm — watch how ALBuild Group grew over 15 years of excellence.',
+    youtube_id: 'GNTb0cyiP8k',
+    thumbnail: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd',
+    duration: '3:42',
+  },
+  {
+    id: 'v2',
+    title: 'Construction Process',
+    description: 'A behind-the-scenes look at our meticulous construction methodology, from groundbreaking to handover.',
+    youtube_id: 'Y5KHqCFTiMI',
+    thumbnail: 'https://images.unsplash.com/photo-1535732759880-bbd5c7265e3f',
+    duration: '2:18',
+  },
+  {
+    id: 'v3',
+    title: 'Featured Project Walkthrough',
+    description: 'Step inside the Vake Business Center — our award-winning commercial development in the heart of Tbilisi.',
+    youtube_id: 'rdBdWKhHGxA',
+    thumbnail: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab',
+    duration: '4:05',
+  },
+]
+
 export const CONTACT_INFO = {
   address: '24 Rustaveli Avenue, Tbilisi, Georgia 0108',
   phone: '+995 32 123 4567',

@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import Hero from '../sections/home/Hero'
 import Services from '../sections/home/Services'
 import ProjectsPreview from '../sections/home/Projects'
+import VideoSection from '../sections/home/VideoSection'
 import Stats from '../sections/home/Stats'
 import Testimonials from '../sections/home/Testimonials'
 import CTA from '../sections/home/CTA'
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <Services />
       <ProjectsPreview />
+      <VideoSection />
       <Stats />
       <Testimonials />
       <CTA />

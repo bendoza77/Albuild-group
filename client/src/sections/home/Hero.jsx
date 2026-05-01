@@ -1,8 +1,10 @@
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import { ArrowRight, ChevronDown, Award, Users, Briefcase } from 'lucide-react'
+import { ArrowRight, ChevronDown, Award, Users, Briefcase, Play } from 'lucide-react'
 import Container from '../../components/ui/Container'
-import { HERO_IMAGE } from '../../utils/constants'
+import VideoModal from '../../components/shared/VideoModal'
+import { HERO_IMAGE, VIDEO_DATA } from '../../utils/constants'
 
 const HERO_STATS = [
   { icon: Award,    value: '15+',  label: 'Years'    },
@@ -54,6 +56,7 @@ function SkyllineSVG() {
 }
 
 export default function Hero() {
+  const [videoOpen, setVideoOpen] = useState(false)
   const scrollDown = () => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })
 
   return (
@@ -200,6 +203,18 @@ export default function Hero() {
                 Free Consultation
               </motion.span>
             </Link>
+
+            <motion.button
+              onClick={() => setVideoOpen(true)}
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.97 }}
+              className="inline-flex items-center gap-3 text-beige/80 hover:text-beige font-body font-semibold text-base cursor-pointer transition-colors duration-300 group"
+            >
+              <span className="w-11 h-11 rounded-full border-2 border-accent/60 group-hover:border-accent flex items-center justify-center transition-colors duration-300">
+                <Play className="w-4 h-4 text-accent fill-current ml-0.5" />
+              </span>
+              Watch Our Story
+            </motion.button>
           </motion.div>
 
           {/* Mini stats */}
@@ -241,6 +256,10 @@ export default function Hero() {
           <ChevronDown className="w-5 h-5" />
         </motion.div>
       </motion.button>
+
+      {videoOpen && (
+        <VideoModal videoId={VIDEO_DATA[0].youtube_id} onClose={() => setVideoOpen(false)} />
+      )}
     </section>
   )
 }
