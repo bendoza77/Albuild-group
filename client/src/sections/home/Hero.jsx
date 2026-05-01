@@ -159,7 +159,7 @@ export default function Hero() {
                 transition={{ duration: 0.9, delay: 0.45 + i * 0.13, ease: [0.16, 1, 0.3, 1] }}
                 className={`mb-2 ${i === 1 ? 'text-gradient inline-block' : ''}`}
               >
-                <h1 className={`font-display text-5xl sm:text-6xl lg:text-7xl xl:text-[5.5rem] font-bold leading-[1.20] ${
+                <h1 className={`font-display text-5xl sm:text-6xl lg:text-7xl xl:text-[5.5rem] font-bold leading-[1.40] ${
                   i === 1 ? 'text-gradient' : 'text-beige'
                 }`}>
                   {line}
