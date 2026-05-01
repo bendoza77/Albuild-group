@@ -61,13 +61,15 @@ export default function Hero() {
 
       {/* ── Background: real photo + layered warm gradients ── */}
       <div className="absolute inset-0 z-0">
-        {/* Hero construction photo */}
-        <img
-          src={`${HERO_IMAGE}?auto=format&fit=crop&w=3840&q=90`}
-          alt=""
-          aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover object-[center_20%]"
-        />
+        {/* Hero construction photo — wrapper fills section, img fills wrapper */}
+        <div style={{ position: 'absolute', inset: 0, overflow: 'hidden' }}>
+          <img
+            src={`${HERO_IMAGE}?auto=format&fit=crop&w=3840&q=90`}
+            alt=""
+            aria-hidden="true"
+            style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 20%' }}
+          />
+        </div>
 
         {/* Warm overlay — lets the photo breathe while keeping text readable */}
         <div

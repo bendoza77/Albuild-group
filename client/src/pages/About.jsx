@@ -15,22 +15,24 @@ export default function About() {
   return (
     <motion.div {...pageTransition}>
       {/* Page hero */}
-      <section className="relative min-h-[55vh] sm:min-h-[60vh] flex items-center overflow-hidden">
-        {/* 4K background — covers 100% at all breakpoints */}
-        <img
-          src={`${PAGE_HERO_IMAGES.about}?auto=format&fit=crop&w=3840&q=90`}
-          alt=""
-          aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover object-[center_30%]"
-        />
+      <section className="relative min-h-[55vh] sm:min-h-[60vh] overflow-hidden">
+        {/* Outer div fills section exactly, inner img fills it — bulletproof coverage */}
+        <div style={{ position: 'absolute', inset: 0 }}>
+          <img
+            src={`${PAGE_HERO_IMAGES.about}?auto=format&fit=crop&w=3840&q=90`}
+            alt=""
+            aria-hidden="true"
+            style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%' }}
+          />
+        </div>
         {/* Warm dark overlay */}
         <div
-          className="absolute inset-0"
           style={{
+            position: 'absolute', inset: 0,
             background: 'linear-gradient(140deg, rgba(18,9,0,0.82) 0%, rgba(44,26,18,0.70) 50%, rgba(61,34,21,0.55) 100%)',
           }}
         />
-        <Container className="relative z-10 pt-36 pb-16 sm:pt-40 sm:pb-20">
+        <Container className="relative z-10 pt-40 pb-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

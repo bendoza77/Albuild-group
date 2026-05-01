@@ -30,7 +30,8 @@ function MemberAvatar({ name, image, gradient }) {
       <img
         src={`${image}?auto=format&fit=crop&w=800&h=800&q=90`}
         alt={name}
-        className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-600 group-hover:scale-105"
+        style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }}
+        className="transition-transform duration-500 group-hover:scale-105"
         onError={(e) => { e.currentTarget.style.display = 'none' }}
       />
     </div>

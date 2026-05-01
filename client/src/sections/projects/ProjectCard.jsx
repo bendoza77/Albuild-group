@@ -16,11 +16,11 @@ export default function ProjectCard({ project, index = 0 }) {
     >
       {/* Image area — real project photo */}
       <div className="relative h-52 sm:h-56 overflow-hidden">
-        {/* Actual project photo */}
         <img
           src={`${project.image}?auto=format&fit=crop&w=1400&q=90`}
           alt={project.title}
-          className="absolute inset-0 w-full h-full object-cover object-[center_30%] transition-transform duration-500 group-hover:scale-105"
+          style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%' }}
+          className="transition-transform duration-500 group-hover:scale-105"
         />
 
         {/* Gradient overlay for text legibility */}

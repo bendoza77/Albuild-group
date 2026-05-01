@@ -6,34 +6,36 @@ import { PAGE_HERO_IMAGES } from '../../utils/constants'
 
 export default function CTA() {
   return (
-    <section className="relative py-28 overflow-hidden min-h-[50vh] flex items-center">
+    <section className="relative min-h-[50vh] overflow-hidden">
 
-      {/* 4K background photo */}
-      <img
-        src={`${PAGE_HERO_IMAGES.cta}?auto=format&fit=crop&w=3840&q=90`}
-        alt=""
-        aria-hidden="true"
-        className="absolute inset-0 w-full h-full object-cover object-center"
-      />
+      {/* 4K background — outer div fills section, inner img fills it */}
+      <div style={{ position: 'absolute', inset: 0 }}>
+        <img
+          src={`${PAGE_HERO_IMAGES.cta}?auto=format&fit=crop&w=3840&q=90`}
+          alt=""
+          aria-hidden="true"
+          style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
+        />
+      </div>
 
-      {/* Warm orange overlay — brand colour on top of photo */}
+      {/* Warm orange overlay */}
       <div
-        className="absolute inset-0"
         style={{
-          background: 'linear-gradient(135deg, rgba(192,96,20,0.90) 0%, rgba(242,166,90,0.80) 100%)',
+          position: 'absolute', inset: 0,
+          background: 'linear-gradient(135deg, rgba(192,96,20,0.92) 0%, rgba(242,166,90,0.82) 100%)',
         }}
       />
 
       {/* Subtle dot pattern */}
       <div
-        className="absolute inset-0 opacity-[0.06]"
         style={{
-          backgroundImage: 'radial-gradient(circle, white 1.5px, transparent 1.5px)',
+          position: 'absolute', inset: 0,
+          backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.15) 1.5px, transparent 1.5px)',
           backgroundSize: '30px 30px',
         }}
       />
 
-      <Container className="relative z-10">
+      <Container className="relative z-10 py-28">
         <div className="max-w-3xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

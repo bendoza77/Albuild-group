@@ -63,7 +63,8 @@ export default function ProjectsPreview() {
                 <img
                   src={`${project.image}?auto=format&fit=crop&w=1800&q=90`}
                   alt={project.title}
-                  className="absolute inset-0 w-full h-full object-cover object-[center_30%] transition-transform duration-700 group-hover:scale-105"
+                  style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%' }}
+                  className="transition-transform duration-700 group-hover:scale-105"
                 />
 
                 {/* Dark gradient so bottom text stays legible */}

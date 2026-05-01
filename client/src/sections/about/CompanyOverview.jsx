@@ -26,7 +26,8 @@ function PhotoPanel({ image, label }) {
       <img
         src={`${image}?auto=format&fit=crop&w=1200&q=90`}
         alt={label}
-        className="absolute inset-0 w-full h-full object-cover transition-transform duration-600 group-hover:scale-105"
+        style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
+        className="transition-transform duration-500 group-hover:scale-105"
       />
       {/* Dark gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent" />
