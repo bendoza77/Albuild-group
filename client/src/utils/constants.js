@@ -1,45 +1,45 @@
 export const NAV_LINKS = [
-  { name: 'Home', path: '/' },
-  { name: 'About', path: '/about' },
-  { name: 'Projects', path: '/projects' },
-  { name: 'Contact', path: '/contact' },
+  { name: 'მთავარი', path: '/' },
+  { name: 'ჩვენს შესახებ', path: '/about' },
+  { name: 'პროექტები', path: '/projects' },
+  { name: 'კონტაქტი', path: '/contact' },
 ]
 
 export const SERVICES_DATA = [
   {
     id: 1,
-    title: 'Residential Construction',
-    description: 'Custom homes and multi-family residences built with premium materials and meticulous craftsmanship tailored to your vision.',
+    title: 'საცხოვრებელი მშენებლობა',
+    description: 'კერძო სახლები და მრავალბინიანი კომპლექსები, შენდება პრემიუმ მასალებით და ოსტატური ხელოვნებით — თქვენი ხედვის შესაბამისად.',
     icon: 'Home',
   },
   {
     id: 2,
-    title: 'Commercial Buildings',
-    description: 'Office towers, retail centers, and commercial spaces combining architectural excellence with functional design.',
+    title: 'კომერციული შენობები',
+    description: 'საოფისე კომპლექსები, სავაჭრო ცენტრები და კომერციული სივრცეები — სადაც შერწყმულია არქიტექტურული სრულყოფა და ფუნქციური დიზაინი.',
     icon: 'Building2',
   },
   {
     id: 3,
-    title: 'Industrial Facilities',
-    description: 'Warehouses, manufacturing plants, and logistics hubs engineered for maximum operational efficiency.',
+    title: 'სამრეწველო ობიექტები',
+    description: 'საწყობები, სამანქანათმშენებლო ქარხნები და ლოჯისტიკური კვანძები — დაპროექტებული მაქსიმალური ოპერაციული ეფექტიანობისთვის.',
     icon: 'Factory',
   },
   {
     id: 4,
-    title: 'Renovation & Restoration',
-    description: 'Breathing new life into existing structures — preserving character while elevating quality and functionality.',
+    title: 'რეკონსტრუქცია და რესტავრაცია',
+    description: 'არსებულ შენობებს ახალი სიცოცხლის ჩასუნთქვა — ხასიათის შენარჩუნება ხარისხისა და ფუნქციონალობის ამაღლებასთან ერთად.',
     icon: 'Hammer',
   },
   {
     id: 5,
-    title: 'Project Management',
-    description: 'End-to-end oversight ensuring every project is delivered on time, within budget, and to exact specification.',
+    title: 'პროექტის მართვა',
+    description: 'სრული ზედამხედველობა, რომელიც უზრუნველყოფს ყოველი პროექტის ვადაში, ბიუჯეტის ფარგლებში და ზუსტ სპეციფიკაციაში მიწოდებას.',
     icon: 'ClipboardList',
   },
   {
     id: 6,
-    title: 'Interior Finishing',
-    description: 'Premium interior work that transforms raw spaces into refined environments of lasting beauty and comfort.',
+    title: 'ინტერიერის მოწყობა',
+    description: 'პრემიუმ ინტერიერის სამუშაოები, რომლებიც ნედლ სივრცეებს გარდაქმნის დახვეწილ გარემოდ — მდგრადი სილამაზითა და კომფორტით.',
     icon: 'Paintbrush',
   },
 ]
@@ -49,141 +49,136 @@ export const HERO_IMAGE   = 'https://images.unsplash.com/photo-1485083269755-a7b
 
 // 4K page-hero backgrounds (use w=3840 for full 4K)
 export const PAGE_HERO_IMAGES = {
-  about:    'https://images.unsplash.com/photo-1541888946425-d81bb19240f5', // Construction workers on site
-  projects: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab', // Looking up at a glass skyscraper
-  contact:  'https://images.unsplash.com/photo-1497366216548-37526070297c', // Modern building exterior
-  cta:      'https://images.unsplash.com/photo-1504307651254-35680f356dfd', // Active construction site wide
+  about:    'https://images.unsplash.com/photo-1541888946425-d81bb19240f5',
+  projects: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab',
+  contact:  'https://images.unsplash.com/photo-1497366216548-37526070297c',
+  cta:      'https://images.unsplash.com/photo-1504307651254-35680f356dfd',
 }
 
 export const ABOUT_IMAGES = [
-  'https://images.unsplash.com/photo-1535732759880-bbd5c7265e3f',  // Tower crane, low angle
-  'https://images.unsplash.com/photo-1504307651254-35680f356dfd',  // Active construction site
-  'https://images.unsplash.com/photo-1503387762-592deb58ef4e',     // Construction blueprints & team
-  'https://images.unsplash.com/photo-1694521787162-5373b598945c',  // Workers on active build
+  'https://images.unsplash.com/photo-1535732759880-bbd5c7265e3f',
+  'https://images.unsplash.com/photo-1504307651254-35680f356dfd',
+  'https://images.unsplash.com/photo-1503387762-592deb58ef4e',
+  'https://images.unsplash.com/photo-1694521787162-5373b598945c',
 ]
 
 export const PROJECTS_DATA = [
   {
     id: 1,
-    title: 'Tskneti Hills Residence',
-    category: 'Residential',
-    location: 'Tskneti, Tbilisi',
+    title: 'წყნეთის ბორცვების რეზიდენცია',
+    category: 'საცხოვრებელი',
+    location: 'წყნეთი, თბილისი',
     year: '2024',
-    area: '850 m²',
-    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6', // Modern luxury villa
+    area: '850 მ²',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6',
     featured: true,
   },
   {
     id: 2,
-    title: 'Vake Business Center',
-    category: 'Commercial',
-    location: 'Vake, Tbilisi',
+    title: 'ვაკის ბიზნეს ცენტრი',
+    category: 'კომერციული',
+    location: 'ვაკე, თბილისი',
     year: '2023',
-    area: '4,200 m²',
-    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e', // Glass office tower
+    area: '4 200 მ²',
+    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e',
     featured: true,
   },
   {
     id: 3,
-    title: 'Batumi Skyline Apartments',
-    category: 'Residential',
-    location: 'Batumi, Adjara',
+    title: 'ბათუმის სასახლის აპარტამენტები',
+    category: 'საცხოვრებელი',
+    location: 'ბათუმი, აჭარა',
     year: '2024',
-    area: '12,000 m²',
-    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00', // Modern residential high-rise
+    area: '12 000 მ²',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00',
     featured: true,
   },
   {
     id: 4,
-    title: 'Rustavi Industrial Hub',
-    category: 'Industrial',
-    location: 'Rustavi, Georgia',
+    title: 'რუსთავის სამრეწველო კვანძი',
+    category: 'სამრეწველო',
+    location: 'რუსთავი, საქართველო',
     year: '2023',
-    area: '8,500 m²',
-    // Large warehouse storage facility (confirmed: real warehouse photo)
+    area: '8 500 მ²',
     image: 'https://images.unsplash.com/photo-1684695749267-233af13276d0',
     featured: false,
   },
   {
     id: 5,
-    title: 'Mtatsminda Hotel & Spa',
-    category: 'Commercial',
-    location: 'Mtatsminda, Tbilisi',
+    title: 'მთაწმინდის სასტუმრო და სპა',
+    category: 'კომერციული',
+    location: 'მთაწმინდა, თბილისი',
     year: '2022',
-    area: '6,300 m²',
-    // Modern glass high-rise tower (confirmed: Netherlands glass office tower)
+    area: '6 300 მ²',
     image: 'https://images.unsplash.com/photo-1652876256405-3902cc201b22',
     featured: false,
   },
   {
     id: 6,
-    title: 'Kutaisi Office Complex',
-    category: 'Commercial',
-    location: 'Kutaisi, Georgia',
+    title: 'ქუთაისის საოფისე კომპლექსი',
+    category: 'კომერციული',
+    location: 'ქუთაისი, საქართველო',
     year: '2023',
-    area: '3,100 m²',
-    // Brown concrete modern office building (confirmed: Tempe AZ building)
+    area: '3 100 მ²',
     image: 'https://images.unsplash.com/photo-1560922604-d08a31f8f7d1',
     featured: false,
   },
   {
     id: 7,
-    title: 'Gori Modern Villas',
-    category: 'Residential',
-    location: 'Gori, Georgia',
+    title: 'გორის თანამედროვე ვილები',
+    category: 'საცხოვრებელი',
+    location: 'გორი, საქართველო',
     year: '2024',
-    area: '2,400 m²',
-    // High-rise residential at night with cranes (confirmed: urban night skyline)
+    area: '2 400 მ²',
     image: 'https://images.unsplash.com/photo-1599995903128-531fc7fb694b',
     featured: false,
   },
   {
     id: 8,
-    title: 'Poti Logistics Center',
-    category: 'Industrial',
-    location: 'Poti, Georgia',
+    title: 'ფოთის ლოჯისტიკის ცენტრი',
+    category: 'სამრეწველო',
+    location: 'ფოთი, საქართველო',
     year: '2022',
-    area: '15,000 m²',
-    // Tower crane close-up — industrial/construction (confirmed: ESZRBtkQ_f8)
+    area: '15 000 მ²',
     image: 'https://images.unsplash.com/photo-1535732759880-bbd5c7265e3f',
     featured: false,
   },
 ]
 
 export const STATS_DATA = [
-  { value: 15, suffix: '+', label: 'Years of Excellence' },
-  { value: 250, suffix: '+', label: 'Projects Completed' },
-  { value: 50, suffix: '+', label: 'Expert Specialists' },
-  { value: 98, suffix: '%', label: 'Client Satisfaction' },
+  { value: 15, suffix: '+', label: 'წელი წარმატებით' },
+  { value: 250, suffix: '+', label: 'შესრულებული პროექტი' },
+  { value: 50, suffix: '+', label: 'ექსპერტი სპეციალისტი' },
+  { value: 98, suffix: '%', label: 'კლიენტის კმაყოფილება' },
 ]
 
 export const TEAM_DATA = [
   {
     id: 1,
-    name: 'Giorgi Kvirikashvili',
-    role: 'CEO & Founder',
-    bio: '20+ years leading major construction projects across the South Caucasus region with a vision for sustainable excellence.',
+    name: 'გიორგი კვირიკაშვილი',
+    role: 'აღმასრულებელი დირექტორი და დამფუძნებელი',
+    bio: 'სამხრეთ კავკასიაში 20+ წელი მსხვილი სამშენებლო პროექტების ხელმძღვანელობისა და მდგრადი განვითარებისადმი ვალდებულების გამოცდილებით.',
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d',
   },
   {
     id: 2,
-    name: 'Nino Lomidze',
-    role: 'Chief Architect',
-    bio: 'Award-winning architect with an international portfolio and a philosophy rooted in functional beauty.',
+    name: 'ნინო ლომიძე',
+    role: 'მთავარი არქიტექტორი',
+    bio: 'ჯილდოს მქონე არქიტექტორი საერთაშორისო პორტფოლიოთი, ფილოსოფია დაფუძნებულია ფუნქციურ სილამაზეზე.',
     image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2',
   },
   {
     id: 3,
-    name: 'Davit Beridze',
-    role: 'Head of Engineering',
-    bio: 'Structural engineering specialist with 15+ years of experience on landmark residential and commercial projects.',
+    name: 'დავით ბერიძე',
+    role: 'ინჟინერინგის ხელმძღვანელი',
+    bio: 'კონსტრუქციული ინჟინერიის სპეციალისტი 15+ წლის გამოცდილებით სანიშნავ საცხოვრებელ და კომერციულ პროექტებზე.',
     image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a',
   },
   {
     id: 4,
-    name: 'Mariam Jgerenaia',
-    role: 'Director of Operations',
-    bio: 'Operations leader ensuring every ALBuild project meets the highest standards of precision, safety, and timeliness.',
+    name: 'მარიამ ჯღერენაია',
+    role: 'ოპერაციების დირექტორი',
+    bio: 'ოპერაციების ლიდერი, რომელიც ALBuild-ის ყოველ პროექტზე უზრუნველყოფს სიზუსტის, უსაფრთხოებისა და ვადების უმაღლეს სტანდარტებს.',
     image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956',
   },
 ]
@@ -191,28 +186,28 @@ export const TEAM_DATA = [
 export const TESTIMONIALS_DATA = [
   {
     id: 1,
-    name: 'Irakli Okruashvili',
-    company: 'Okruashvili Holdings',
-    role: 'CEO',
-    text: 'ALBuild Group transformed our vision into reality with remarkable precision. The quality of their work and their professionalism throughout the entire project was simply exceptional.',
+    name: 'ირაკლი ოქრუაშვილი',
+    company: 'ოქრუაშვილი ჰოლდინგი',
+    role: 'აღმასრულებელი დირექტორი',
+    text: 'ALBuild Group-მა ჩვენი ხედვა სრულყოფილი სიზუსტით გააცოცხლა. მათი სამუშაოს ხარისხი და პროფესიონალიზმი მთელი პროექტის განმავლობაში უბრალოდ განსაკუთრებული იყო.',
     rating: 5,
     image: 'https://picsum.photos/seed/albuild-r1/100/100',
   },
   {
     id: 2,
-    name: 'Tamar Khachidze',
-    company: 'Khachidze Real Estate',
-    role: 'Managing Director',
-    text: 'We have collaborated with ALBuild on three major residential developments. Their attention to detail and unwavering commitment to deadlines is unmatched in the Georgian market.',
+    name: 'თამარ ხაჩიძე',
+    company: 'ხაჩიძე უძრავი ქონება',
+    role: 'მართვის დირექტორი',
+    text: 'ჩვენ ALBuild-თან ვიმუშავეთ სამ მსხვილ საცხოვრებელ პროექტზე. დეტალებზე ყურადღება და ვადების მიმართ ერთგულება ქართულ ბაზარზე უპირველესია.',
     rating: 5,
     image: 'https://picsum.photos/seed/albuild-r2/100/100',
   },
   {
     id: 3,
-    name: 'Levan Guruli',
-    company: 'GurTech Solutions',
-    role: 'Founder',
-    text: 'Our headquarters was designed and built by ALBuild. They delivered on time, within budget, and the final result genuinely exceeded every expectation we had set.',
+    name: 'ლევან გურული',
+    company: 'გურტეკ სოლუშენსი',
+    role: 'დამფუძნებელი',
+    text: 'ჩვენი სათაო ოფისი ALBuild-მა შეიმუშავა და ააშენა. ვადაში, ბიუჯეტის ფარგლებში — და საბოლოო შედეგი ჩვენ ყველა მოლოდინს გადააჭარბა.',
     rating: 5,
     image: 'https://picsum.photos/seed/albuild-r3/100/100',
   },
@@ -221,72 +216,72 @@ export const TESTIMONIALS_DATA = [
 export const VALUES_DATA = [
   {
     id: 1,
-    title: 'Quality First',
-    description: 'Every project reflects our unwavering commitment to superior materials, expert craftsmanship, and rigorous quality control at every stage.',
+    title: 'ხარისხი პირველ რიგში',
+    description: 'ყოველი პროექტი ასახავს ჩვენს ურყევ ვალდებულებას პრემიუმ მასალებისადმი, ექსპერტ ხელოსნობასა და მკაცრ ხარისხის კონტროლს — ყოველ ეტაპზე.',
     icon: 'Star',
   },
   {
     id: 2,
-    title: 'Integrity & Trust',
-    description: 'Transparent communication, honest pricing, and reliable timelines form the foundation of every client relationship we build.',
+    title: 'მთლიანობა და ნდობა',
+    description: 'გამჭვირვალე კომუნიკაცია, პატიოსანი ფასები და სანდო ვადები — ეს ყველაფერი ქმნის ყოველი კლიენტთან ურთიერთობის საფუძველს.',
     icon: 'Shield',
   },
   {
     id: 3,
-    title: 'Innovation',
-    description: 'We embrace modern construction technologies and sustainable building methods to deliver structures built for the future.',
+    title: 'ინოვაცია',
+    description: 'ჩვენ ვიყენებთ თანამედროვე სამშენებლო ტექნოლოგიებს და მდგრად მეთოდებს — ვქმნით სტრუქტურებს, რომლებიც მომავლისათვისაა გათვლილი.',
     icon: 'Lightbulb',
   },
   {
     id: 4,
-    title: 'Safety Culture',
-    description: 'The wellbeing of our teams and clients is paramount. We maintain the strictest safety protocols on every site, every day.',
+    title: 'უსაფრთხოების კულტურა',
+    description: 'ჩვენი გუნდებისა და კლიენტების კეთილდღეობა უმთავრესია. ყოველ სამუშაო მოედანზე, ყოველდღე ვახორციელებთ ყველაზე მკაცრ უსაფრთხოების სტანდარტებს.',
     icon: 'ShieldCheck',
   },
 ]
 
 export const TIMELINE_DATA = [
-  { year: '2009', title: 'Foundation', description: 'ALBuild Group was established in Tbilisi with a team of 8 specialists and a mission to redefine construction standards in Georgia.' },
-  { year: '2012', title: 'First Major Commercial Project', description: 'Completed our first large-scale commercial building in Vake district, establishing our reputation for quality and precision.' },
-  { year: '2016', title: 'Regional Expansion', description: 'Extended operations to Batumi, Kutaisi, and Rustavi, becoming one of Georgia\'s most recognized construction firms.' },
-  { year: '2019', title: '10 Year Anniversary', description: 'Celebrated a decade of excellence with 150+ completed projects and a team grown to 50+ specialists.' },
-  { year: '2022', title: 'Sustainability Initiative', description: 'Launched our green building program, integrating sustainable materials and energy-efficient design across all new projects.' },
-  { year: '2024', title: 'Present Day', description: 'Over 250 projects delivered, serving clients across all sectors with an unwavering commitment to excellence.' },
+  { year: '2009', title: 'დაფუძნება', description: 'ALBuild Group დაარსდა თბილისში 8 სპეციალისტიანი გუნდით მისიით — ხელახლა განეჩინოს სამშენებლო სტანდარტები საქართველოში.' },
+  { year: '2012', title: 'პირველი მსხვილი კომერციული პროექტი', description: 'ვაკის უბანში ავაშენეთ პირველი მსხვილი კომერციული შენობა, რამაც ხარისხისა და სიზუსტის კუთხით ჩვენი რეპუტაცია დაამკვიდრა.' },
+  { year: '2016', title: 'რეგიონული გაფართოება', description: 'გავავრცელეთ საქმიანობა ბათუმში, ქუთაისსა და რუსთავში — გახდით საქართველოს ერთ-ერთი ყველაზე სახელგანთქმული სამშენებლო კომპანია.' },
+  { year: '2019', title: '10 წლის იუბილე', description: 'სრულყოფის ათი წელი 150+ დასრულებული პროექტით და 50+ სპეციალისტამდე გაზრდილი გუნდით.' },
+  { year: '2022', title: 'მდგრადობის ინიციატივა', description: 'გავუშვით მწვანე მშენებლობის პროგრამა — ვაინტეგრირეთ მდგრადი მასალები და ენერგოეფექტური დიზაინი ყველა ახალ პროექტში.' },
+  { year: '2024', title: 'დღეს', description: '250-ზე მეტი პროექტი და კვლავ ვიზრდებით — ვემსახურებით კლიენტებს ყველა სექტორში სრულყოფისადმი ურყევი ვალდებულებით.' },
 ]
 
-export const PROJECT_CATEGORIES = ['All', 'Residential', 'Commercial', 'Industrial']
+export const PROJECT_CATEGORIES = ['ყველა', 'საცხოვრებელი', 'კომერციული', 'სამრეწველო']
+
+export const CONTACT_INFO = {
+  address: '24 რუსთაველის გამზირი, თბილისი, საქართველო 0108',
+  phone: '+995 32 123 4567',
+  email: 'info@albuildgroup.ge',
+  hours: 'ორშ – პარ: 9:00 – 18:00',
+}
 
 // YouTube video IDs — replace with your actual video IDs
 export const VIDEO_DATA = [
   {
     id: 'v1',
-    title: 'Our Story: Building Georgia',
-    description: 'From a small team of 8 to Georgia\'s leading construction firm — watch how ALBuild Group grew over 15 years of excellence.',
+    title: 'ჩვენი ისტორია: ვაშენებთ საქართველოს',
+    description: '8 სპეციალისტიანი მცირე გუნდიდან საქართველოს წამყვან სამშენებლო კომპანიამდე — ნახეთ ALBuild Group-ის ზრდა სრულყოფის 15 წლის განმავლობაში.',
     youtube_id: 'GNTb0cyiP8k',
     thumbnail: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd',
     duration: '3:42',
   },
   {
     id: 'v2',
-    title: 'Construction Process',
-    description: 'A behind-the-scenes look at our meticulous construction methodology, from groundbreaking to handover.',
+    title: 'სამშენებლო პროცესი',
+    description: 'გახსენით კულისები ჩვენი გულდასმული სამშენებლო მეთოდოლოგიის — სამუშაოს დაწყებიდან პროექტის ჩაბარებამდე.',
     youtube_id: 'Y5KHqCFTiMI',
     thumbnail: 'https://images.unsplash.com/photo-1535732759880-bbd5c7265e3f',
     duration: '2:18',
   },
   {
     id: 'v3',
-    title: 'Featured Project Walkthrough',
-    description: 'Step inside the Vake Business Center — our award-winning commercial development in the heart of Tbilisi.',
+    title: 'გამორჩეული პროექტის ტური',
+    description: 'შედით ვაკის ბიზნეს ცენტრში — ჩვენი ჯილდოს მქონე კომერციული განვითარება თბილისის გულში.',
     youtube_id: 'rdBdWKhHGxA',
     thumbnail: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab',
     duration: '4:05',
   },
 ]
-
-export const CONTACT_INFO = {
-  address: '24 Rustaveli Avenue, Tbilisi, Georgia 0108',
-  phone: '+995 32 123 4567',
-  email: 'info@albuildgroup.ge',
-  hours: 'Mon – Fri: 9:00 – 18:00',
-}

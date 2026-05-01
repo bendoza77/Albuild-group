@@ -38,7 +38,7 @@ export default function Contact() {
             className="flex items-center gap-3 mb-5"
           >
             <div className="h-px w-8 bg-accent" />
-            <span className="font-body text-accent text-xs uppercase tracking-widest font-semibold">Get in Touch</span>
+            <span className="font-body text-accent text-xs uppercase tracking-widest font-semibold">დაგვიკავშირდით</span>
           </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -46,7 +46,7 @@ export default function Contact() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="font-display text-5xl md:text-6xl font-bold text-beige mb-6 max-w-xl leading-tight"
           >
-            Let's Build Something Great Together
+            ერთად შევქმნათ რაღაც შესანიშნავი
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -54,7 +54,7 @@ export default function Contact() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="font-body text-warm-gray text-lg max-w-lg leading-relaxed mb-8"
           >
-            Our team is ready to discuss your project, answer questions, and provide a free consultation.
+            ჩვენი გუნდი მზადაა განიხილოს თქვენი პროექტი, უპასუხოს თქვენს კითხვებს და მოგაწოდოთ უფასო კონსულტაცია.
           </motion.p>
           <motion.div
             initial={{ opacity: 0 }}

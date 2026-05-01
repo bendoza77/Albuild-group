@@ -7,9 +7,9 @@ import VideoModal from '../../components/shared/VideoModal'
 import { HERO_IMAGE, VIDEO_DATA } from '../../utils/constants'
 
 const HERO_STATS = [
-  { icon: Award,    value: '15+',  label: 'Years'    },
-  { icon: Briefcase, value: '250+', label: 'Projects' },
-  { icon: Users,    value: '50+',  label: 'Experts'  },
+  { icon: Award,    value: '15+',  label: 'წელი'     },
+  { icon: Briefcase, value: '250+', label: 'პროექტი' },
+  { icon: Users,    value: '50+',  label: 'ექსპერტი' },
 ]
 
 /* City-skyline silhouette – pure SVG, always on-brand */
@@ -128,7 +128,7 @@ export default function Hero() {
       >
         <div className="w-px h-20 bg-accent" />
         <p className="font-body text-[11px] uppercase tracking-[0.4em] text-beige rotate-90 whitespace-nowrap">
-          Building Georgia's Future
+          ვაშენებთ საქართველოს მომავალს
         </p>
         <div className="w-px h-20 bg-accent" />
       </motion.div>
@@ -146,12 +146,12 @@ export default function Hero() {
           >
             <div className="h-px w-10 bg-accent" />
             <span className="font-body text-accent text-xs sm:text-sm uppercase tracking-[0.25em] font-semibold">
-              Est. 2009 — Georgia's Premier Builder
+              დაარს. 2009 — საქართველოს საუკეთესო მშენებელი
             </span>
           </motion.div>
 
           {/* Headline */}
-          {['Building Strong', 'Foundations', 'for Tomorrow'].map((line, i) => (
+          {['ვქმნით მყარ', 'საფუძვლებს', 'მომავლისათვის'].map((line, i) => (
             <div className="overflow-hidden" key={i}>
               <motion.div
                 initial={{ y: 80, opacity: 0 }}
@@ -159,7 +159,7 @@ export default function Hero() {
                 transition={{ duration: 0.9, delay: 0.45 + i * 0.13, ease: [0.16, 1, 0.3, 1] }}
                 className={`mb-2 ${i === 1 ? 'text-gradient inline-block' : ''}`}
               >
-                <h1 className={`font-display text-5xl sm:text-6xl lg:text-7xl xl:text-[5.5rem] font-bold leading-[1.03] ${
+                <h1 className={`font-display text-5xl sm:text-6xl lg:text-7xl xl:text-[5.5rem] font-bold leading-[1.20] ${
                   i === 1 ? 'text-gradient' : 'text-beige'
                 }`}>
                   {line}
@@ -175,7 +175,7 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.88 }}
             className="font-body text-base sm:text-lg text-highlight/70 leading-relaxed mt-6 mb-10 max-w-lg"
           >
-            ALBuild Group delivers precision-engineered construction projects across Georgia — from luxury residences to landmark commercial developments.
+            ALBuild Group ახორციელებს სიზუსტით განხორციელებულ სამშენებლო პროექტებს მთელ საქართველოში — ლუქსი საცხოვრებლებიდან სანიშნავ კომერციულ განვითარებამდე.
           </motion.p>
 
           {/* CTAs */}
@@ -191,7 +191,7 @@ export default function Hero() {
                 whileTap={{ scale: 0.97 }}
                 className="inline-flex items-center gap-2.5 bg-accent text-primary font-body font-bold px-7 py-4 rounded-xl text-base cursor-pointer transition-shadow duration-300"
               >
-                View Our Projects <ArrowRight className="w-4 h-4" />
+                იხილეთ პროექტები <ArrowRight className="w-4 h-4" />
               </motion.span>
             </Link>
             <Link to="/contact">
@@ -200,7 +200,7 @@ export default function Hero() {
                 whileTap={{ scale: 0.97 }}
                 className="inline-flex items-center gap-2.5 border-2 border-highlight/40 text-beige font-body font-semibold px-7 py-4 rounded-xl text-base cursor-pointer transition-colors duration-300"
               >
-                Free Consultation
+                უფასო კონსულტაცია
               </motion.span>
             </Link>
 
@@ -213,7 +213,7 @@ export default function Hero() {
               <span className="w-11 h-11 rounded-full border-2 border-accent/60 group-hover:border-accent flex items-center justify-center transition-colors duration-300">
                 <Play className="w-4 h-4 text-accent fill-current ml-0.5" />
               </span>
-              Watch Our Story
+              ნახეთ ჩვენი ისტორია
             </motion.button>
           </motion.div>
 
@@ -248,7 +248,7 @@ export default function Hero() {
         aria-label="Scroll to services"
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-warm-gray hover:text-accent transition-colors cursor-pointer"
       >
-        <span className="font-body text-[10px] uppercase tracking-[0.25em]">Explore</span>
+        <span className="font-body text-[10px] uppercase tracking-[0.25em]">შეისწავლეთ</span>
         <motion.div
           animate={{ y: [0, 7, 0] }}
           transition={{ duration: 1.6, repeat: Infinity, ease: 'easeInOut' }}

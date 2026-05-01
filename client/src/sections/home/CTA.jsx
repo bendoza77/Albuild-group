@@ -46,7 +46,7 @@ export default function CTA() {
           >
             <div className="h-px w-8 bg-beige/60" />
             <span className="font-body text-beige/80 text-xs uppercase tracking-[0.25em] font-semibold">
-              Ready to Build?
+              მზად ხართ ასაშენებლად?
             </span>
           </motion.div>
 
@@ -57,7 +57,7 @@ export default function CTA() {
             transition={{ duration: 0.7, delay: 0.1, ease: [0.25, 0.1, 0.25, 1] }}
             className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-beige leading-tight mb-6"
           >
-            Let's Build Something<br />Great Together
+            ავაშენოთ<br />რაიმე დიდი ერთად
           </motion.h2>
 
           <motion.p
@@ -67,7 +67,7 @@ export default function CTA() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="font-body text-beige/80 text-base sm:text-lg leading-relaxed mb-10 max-w-xl"
           >
-            From the first consultation to the final handover, our team is committed to turning your vision into a landmark structure.
+            პირველი კონსულტაციდან საბოლოო ჩაბარებამდე, ჩვენი გუნდი ვალდებულია თქვენი ხედვა გარდაქმნას სანიშნავ ნაგებობად.
           </motion.p>
 
           <motion.div
@@ -83,7 +83,7 @@ export default function CTA() {
                 whileTap={{ scale: 0.96 }}
                 className="inline-flex items-center gap-2.5 bg-beige text-secondary font-body font-bold px-8 py-4 rounded-xl text-base cursor-pointer"
               >
-                Start Your Project
+                დაიწყეთ პროექტი
                 <ArrowRight className="w-4 h-4" />
               </motion.span>
             </Link>
@@ -94,7 +94,7 @@ export default function CTA() {
                 className="inline-flex items-center gap-2.5 border-2 border-beige/60 text-beige font-body font-semibold px-8 py-4 rounded-xl text-base cursor-pointer transition-colors"
               >
                 <Phone className="w-4 h-4" />
-                Call Us Now
+                დაგვირეკეთ
               </motion.span>
             </a>
           </motion.div>

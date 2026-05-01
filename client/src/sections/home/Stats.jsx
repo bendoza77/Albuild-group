@@ -44,11 +44,11 @@ export default function Stats() {
         >
           <div className="flex items-center justify-center gap-3 mb-3">
             <div className="h-px w-8 bg-secondary" />
-            <span className="font-body text-secondary text-xs uppercase tracking-widest font-semibold">By the Numbers</span>
+            <span className="font-body text-secondary text-xs uppercase tracking-widest font-semibold">ციფრებში</span>
             <div className="h-px w-8 bg-secondary" />
           </div>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-primary">
-            Proven Track Record
+            დამტკიცებული გამოცდილება
           </h2>
         </motion.div>
 

@@ -5,19 +5,19 @@ import SectionTitle from '../../components/ui/SectionTitle'
 import { ABOUT_IMAGES } from '../../utils/constants'
 
 const HIGHLIGHTS = [
-  'Over 250 completed projects across Georgia',
-  'ISO-certified quality management processes',
-  'In-house engineering and architectural teams',
-  'Strict adherence to international safety standards',
-  'Transparent project management and reporting',
-  'Sustainable and eco-conscious construction methods',
+  '250-ზე მეტი შესრულებული პროექტი მთელ საქართველოში',
+  'ISO-სერტიფიცირებული ხარისხის მართვის პროცესები',
+  'შიდა საინჟინრო და არქიტექტურული გუნდები',
+  'საერთაშორისო უსაფრთხოების სტანდარტების მკაცრი დაცვა',
+  'გამჭვირვალე პროექტის მართვა და ანგარიშგება',
+  'მდგრადი და ეკოლოგიურად გაცნობიერებული სამშენებლო მეთოდები',
 ]
 
 const PANEL_LABELS = [
-  'Precision Engineering',
-  'Quality Materials',
-  'Expert Craftsmanship',
-  'On-Time Delivery',
+  'სიზუსტის ინჟინერია',
+  'ხარისხიანი მასალები',
+  'ექსპერტი ხელოსნობა',
+  'ვადებში ჩაბარება',
 ]
 
 function PhotoPanel({ image, label }) {
@@ -93,9 +93,9 @@ export default function CompanyOverview() {
           {/* Content */}
           <div>
             <SectionTitle
-              eyebrow="Our Story"
-              title="Who We Are"
-              subtitle="Founded in 2009 in Tbilisi, ALBuild Group has grown from a small specialized team into Georgia's most trusted construction company."
+              eyebrow="ჩვენი ისტორია"
+              title="ვინ ვართ ჩვენ"
+              subtitle="დაარსდა 2009 წელს თბილისში, ALBuild Group-მა პატარა სპეციალიზებული გუნდიდან გაიზარდა საქართველოს ყველაზე სანდო სამშენებლო კომპანიად."
             />
 
             <motion.p

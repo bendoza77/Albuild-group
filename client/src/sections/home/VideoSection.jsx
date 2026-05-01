@@ -14,9 +14,9 @@ export default function VideoSection() {
     <section className="py-24 bg-beige">
       <Container>
         <SectionTitle
-          eyebrow="Behind the Build"
-          title="See Us in Action"
-          subtitle="Watch how we transform blueprints into landmark structures across Georgia."
+          eyebrow="მშენებლობის კულისები"
+          title="გვნახეთ სამუშაოში"
+          subtitle="ნახეთ, როგორ ვქმნით ნახაზებიდან სანიშნავ ნაგებობებს მთელ საქართველოში."
           centered
           className="mb-16"
         />

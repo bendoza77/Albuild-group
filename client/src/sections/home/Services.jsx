@@ -14,9 +14,9 @@ export default function Services() {
       <Container>
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16">
           <SectionTitle
-            eyebrow="What We Build"
-            title={<>Our Core<br />Services</>}
-            subtitle="From foundation to finishing, we deliver comprehensive construction solutions built to last."
+            eyebrow="რას ვაშენებთ"
+            title={<>ჩვენი<br />მომსახურებები</>}
+            subtitle="საძირკვლიდან ჩამოსამთავრებლამდე — ვაწვდით ყოვლისმომცველ სამშენებლო გადაწყვეტილებებს."
           />
           <motion.div
             initial={{ opacity: 0, x: 20 }}
@@ -29,7 +29,7 @@ export default function Services() {
                 whileHover={{ gap: '14px' }}
                 className="hidden lg:inline-flex items-center gap-2 font-body font-semibold text-secondary hover:text-accent transition-colors text-sm"
               >
-                See All Projects <ArrowRight className="w-4 h-4" />
+                ყველა პროექტი <ArrowRight className="w-4 h-4" />
               </motion.span>
             </Link>
           </motion.div>
@@ -71,7 +71,7 @@ export default function Services() {
                 {/* Hover indicator */}
                 <div className="mt-5 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="h-px w-5 bg-accent" />
-                  <span className="font-body text-xs uppercase tracking-wider text-secondary font-semibold">Learn More</span>
+                  <span className="font-body text-xs uppercase tracking-wider text-secondary font-semibold">გაიგე მეტი</span>
                 </div>
               </motion.div>
             )

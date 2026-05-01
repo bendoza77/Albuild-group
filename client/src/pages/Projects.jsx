@@ -37,7 +37,7 @@ export default function Projects() {
             className="flex items-center gap-3 mb-5"
           >
             <div className="h-px w-8 bg-accent" />
-            <span className="font-body text-accent text-xs uppercase tracking-widest font-semibold">Our Portfolio</span>
+            <span className="font-body text-accent text-xs uppercase tracking-widest font-semibold">ჩვენი პორტფოლიო</span>
           </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -45,7 +45,7 @@ export default function Projects() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="font-display text-5xl md:text-6xl font-bold text-beige mb-6 max-w-2xl leading-tight"
           >
-            Projects That Define Georgia's Skyline
+            პროექტები, რომლებიც საქართველოს ჰორიზონტს განსაზღვრავენ
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -53,7 +53,7 @@ export default function Projects() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="font-body text-warm-gray text-lg max-w-xl leading-relaxed mb-8"
           >
-            From private residences to commercial landmarks — explore the full breadth of our work.
+            კერძო საცხოვრებელი სახლებიდან კომერციულ ღირსშესანიშნაობებამდე — გაეცანით ჩვენი საქმიანობის სრულ სპექტრს.
           </motion.p>
           <motion.div
             initial={{ opacity: 0 }}

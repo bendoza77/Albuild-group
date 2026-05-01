@@ -37,9 +37,9 @@ export default function Testimonials() {
     <section className="py-24 bg-beige overflow-hidden">
       <Container>
         <SectionTitle
-          eyebrow="Client Stories"
-          title="What Our Clients Say"
-          subtitle="The relationships we build matter as much as the structures we create."
+          eyebrow="კლიენტების ამბები"
+          title="რას ამბობენ ჩვენი კლიენტები"
+          subtitle="ჩვენ მიერ შენდება ურთიერთობები იმდენად მნიშვნელოვანია, რამდენადაც შენობები, რომლებსაც ვქმნით."
           centered
           className="mb-16"
         />

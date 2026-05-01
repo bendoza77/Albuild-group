@@ -40,7 +40,7 @@ export default function About() {
             className="flex items-center gap-3 mb-5"
           >
             <div className="h-px w-8 bg-accent" />
-            <span className="font-body text-accent text-xs uppercase tracking-widest font-semibold">About ALBuild Group</span>
+            <span className="font-body text-accent text-xs uppercase tracking-widest font-semibold">ALBuild ჯგუფის შესახებ</span>
           </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -48,7 +48,7 @@ export default function About() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="font-display text-5xl md:text-6xl font-bold text-beige mb-6 max-w-2xl leading-tight"
           >
-            Crafting Georgia's Built Environment Since 2009
+            საქართველოს აშენებული გარემოს შექმნა 2009 წლიდან
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -56,7 +56,7 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="font-body text-warm-gray text-lg max-w-xl leading-relaxed mb-8"
           >
-            Discover the story, people, and principles behind Georgia's most trusted construction group.
+           აღმოაჩინეთ ისტორია, ადამიანები და პრინციპები, რომლებიც საქართველოს ყველაზე სანდო სამშენებლო ჯგუფის უკან დგას.
           </motion.p>
           <motion.div
             initial={{ opacity: 0 }}

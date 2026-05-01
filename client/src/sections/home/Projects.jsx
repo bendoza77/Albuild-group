@@ -16,9 +16,9 @@ export default function ProjectsPreview() {
       <Container>
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-14">
           <SectionTitle
-            eyebrow="Our Portfolio"
-            title={<>Featured<br />Projects</>}
-            subtitle="A curated selection of our most impactful work across Georgia."
+            eyebrow="ჩვენი პორტფოლიო"
+            title={<>გამორჩეული<br />პროექტები</>}
+            subtitle="ჩვენი ყველაზე მნიშვნელოვანი სამუშაოების კრებული მთელ საქართველოში."
           />
           <motion.div
             initial={{ opacity: 0 }}
@@ -32,7 +32,7 @@ export default function ProjectsPreview() {
                 whileTap={{ scale: 0.97 }}
                 className="inline-flex items-center gap-2 bg-primary text-beige font-body font-semibold px-6 py-3 rounded-xl text-sm cursor-pointer"
               >
-                All Projects <ArrowRight className="w-4 h-4" />
+                ყველა პროექტი <ArrowRight className="w-4 h-4" />
               </motion.span>
             </Link>
           </motion.div>
@@ -104,7 +104,7 @@ export default function ProjectsPreview() {
                     hover: { opacity: 1, y: 0, transition: { duration: 0.3 } },
                   }}
                 >
-                  <span className="font-body text-accent text-xs font-semibold uppercase tracking-wider">View Project</span>
+                  <span className="font-body text-accent text-xs font-semibold uppercase tracking-wider">პროექტის ნახვა</span>
                   <ArrowRight className="w-3 h-3 text-accent" />
                 </motion.div>
               </div>
