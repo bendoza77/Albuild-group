@@ -48,16 +48,16 @@ export default function Services() {
               <motion.div
                 key={service.id}
                 variants={scaleIn}
-                whileHover={{ y: -6, boxShadow: '0 16px 48px rgba(44, 26, 18, 0.12)' }}
-                className="group bg-white rounded-2xl p-7 border border-warm-gray/30 transition-all duration-400 cursor-default"
+                whileHover={{ y: -6, boxShadow: '0 16px 48px rgba(192, 96, 20, 0.14)' }}
+                className="group bg-white rounded-2xl p-7 border border-warm-gray/30 border-t-4 border-t-accent/30 hover:border-t-accent transition-all duration-300 cursor-default"
               >
                 {/* Icon */}
-                <div className="w-12 h-12 rounded-xl bg-highlight flex items-center justify-center mb-5 group-hover:bg-accent/20 transition-colors duration-300">
-                  {Icon && <Icon className="w-5 h-5 text-secondary group-hover:text-secondary transition-colors" />}
+                <div className="w-12 h-12 rounded-xl bg-accent/15 flex items-center justify-center mb-5 group-hover:bg-accent/25 transition-colors duration-300">
+                  {Icon && <Icon className="w-5 h-5 text-secondary" />}
                 </div>
 
                 {/* Number */}
-                <div className="font-display text-5xl font-bold text-warm-gray/20 leading-none mb-1 select-none">
+                <div className="font-display text-5xl font-bold text-accent/15 leading-none mb-1 select-none">
                   {String(i + 1).padStart(2, '0')}
                 </div>
 

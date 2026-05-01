@@ -13,7 +13,7 @@ const LinkedinIcon = () => (
   </svg>
 )
 
-/* Unique gradient per team member */
+/* Fallback gradient per team member (shown if photo fails to load) */
 const MEMBER_GRADIENTS = [
   'linear-gradient(140deg, #2C1A12 0%, #C06014 100%)',
   'linear-gradient(140deg, #1a0e06 0%, #4a2810 70%, #C06014 100%)',
@@ -21,36 +21,18 @@ const MEMBER_GRADIENTS = [
   'linear-gradient(140deg, #120a04 0%, #2C1A12 50%, #6b3515 100%)',
 ]
 
-/* Avatar using member initials on a branded gradient */
-function MemberAvatar({ name, gradient }) {
-  const initials = name
-    .split(' ')
-    .map((n) => n[0])
-    .join('')
-    .slice(0, 2)
-    .toUpperCase()
-
+function MemberAvatar({ name, image, gradient }) {
   return (
     <div
-      className="w-full h-full flex items-center justify-center relative overflow-hidden"
+      className="w-full h-full relative overflow-hidden"
       style={{ background: gradient }}
     >
-      {/* Blueprint grid backdrop */}
-      <div
-        className="absolute inset-0 opacity-[0.08]"
-        style={{
-          backgroundImage: `linear-gradient(rgba(242,166,90,1) 1px, transparent 1px), linear-gradient(90deg, rgba(242,166,90,1) 1px, transparent 1px)`,
-          backgroundSize: '24px 24px',
-        }}
+      <img
+        src={`${image}?auto=format&fit=crop&w=800&h=800&q=90`}
+        alt={name}
+        className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-600 group-hover:scale-105"
+        onError={(e) => { e.currentTarget.style.display = 'none' }}
       />
-      {/* Large faded initial */}
-      <div className="absolute font-display font-bold text-[7rem] text-white/8 leading-none select-none pointer-events-none">
-        {initials[0]}
-      </div>
-      {/* Initials */}
-      <span className="relative z-10 font-display font-bold text-4xl text-accent tracking-wider">
-        {initials}
-      </span>
     </div>
   )
 }
@@ -88,6 +70,7 @@ export default function Team() {
               <div className="relative h-56 overflow-hidden">
                 <MemberAvatar
                   name={member.name}
+                  image={member.image}
                   gradient={MEMBER_GRADIENTS[i % MEMBER_GRADIENTS.length]}
                 />
                 {/* Warm overlay on hover */}

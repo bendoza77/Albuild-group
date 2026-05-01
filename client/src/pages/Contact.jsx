@@ -6,18 +6,29 @@ import ContactForm from '../sections/contact/ContactForm'
 import MapSection from '../sections/contact/Map'
 import { pageTransition } from '../utils/animations'
 import usePageTitle from '../hooks/usePageTitle'
+import { PAGE_HERO_IMAGES } from '../utils/constants'
 
 export default function Contact() {
   usePageTitle('Contact Us')
   return (
     <motion.div {...pageTransition}>
       {/* Page hero */}
-      <section className="relative pt-40 pb-20 bg-primary overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.04]"
-          style={{ backgroundImage: 'radial-gradient(circle, #f2a65a 1px, transparent 1px)', backgroundSize: '28px 28px' }}
+      <section className="relative min-h-[55vh] sm:min-h-[60vh] flex items-center overflow-hidden">
+        {/* 4K background — covers 100% at all breakpoints */}
+        <img
+          src={`${PAGE_HERO_IMAGES.contact}?auto=format&fit=crop&w=3840&q=90`}
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover object-center"
         />
-        <div className="absolute top-0 left-0 w-96 h-96 bg-secondary/12 rounded-full -translate-x-1/3 -translate-y-1/3 blur-3xl" />
-        <Container className="relative z-10">
+        {/* Warm dark overlay */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background: 'linear-gradient(140deg, rgba(18,9,0,0.82) 0%, rgba(44,26,18,0.70) 50%, rgba(61,34,21,0.55) 100%)',
+          }}
+        />
+        <Container className="relative z-10 pt-36 pb-16 sm:pt-40 sm:pb-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

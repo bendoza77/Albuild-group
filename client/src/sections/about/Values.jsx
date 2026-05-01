@@ -20,9 +20,11 @@ export default function Values() {
   return (
     <>
       {/* Values */}
-      <section className="py-24 bg-primary relative overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.03]"
-          style={{ backgroundImage: 'radial-gradient(circle, #f2a65a 1px, transparent 1px)', backgroundSize: '28px 28px' }}
+      <section className="py-24 bg-secondary relative overflow-hidden">
+        {/* Subtle dot pattern */}
+        <div
+          className="absolute inset-0 opacity-[0.07]"
+          style={{ backgroundImage: 'radial-gradient(circle, white 1.5px, transparent 1.5px)', backgroundSize: '28px 28px' }}
         />
         <Container className="relative z-10">
           <SectionTitle
@@ -51,15 +53,15 @@ export default function Values() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: i * 0.1 }}
                   whileHover={{ y: -6 }}
-                  className="group p-7 rounded-2xl border border-beige/10 hover:border-accent/30 hover:bg-beige/4 transition-all duration-400"
+                  className="group bg-white/10 p-7 rounded-2xl border border-beige/20 hover:border-beige/40 hover:bg-white/18 transition-all duration-300"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-accent/15 flex items-center justify-center mb-5 group-hover:bg-accent/25 transition-colors">
-                    {Icon && <Icon className="w-6 h-6 text-accent" />}
+                  <div className="w-12 h-12 rounded-xl bg-beige/20 flex items-center justify-center mb-5 group-hover:bg-beige/30 transition-colors">
+                    {Icon && <Icon className="w-6 h-6 text-beige" />}
                   </div>
-                  <h3 className="font-display font-bold text-xl text-beige mb-3 group-hover:text-accent transition-colors">
+                  <h3 className="font-display font-bold text-xl text-beige mb-3">
                     {value.title}
                   </h3>
-                  <p className="font-body text-warm-gray text-sm leading-relaxed">
+                  <p className="font-body text-beige/70 text-sm leading-relaxed">
                     {value.description}
                   </p>
                 </motion.div>

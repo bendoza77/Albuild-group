@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { ArrowRight, ChevronDown, Award, Users, Briefcase } from 'lucide-react'
 import Container from '../../components/ui/Container'
+import { HERO_IMAGE } from '../../utils/constants'
 
 const HERO_STATS = [
   { icon: Award,    value: '15+',  label: 'Years'    },
@@ -58,16 +59,24 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
 
-      {/* ── Background: layered warm gradients ── */}
+      {/* ── Background: real photo + layered warm gradients ── */}
       <div className="absolute inset-0 z-0">
-        {/* Base mesh gradient */}
+        {/* Hero construction photo */}
+        <img
+          src={`${HERO_IMAGE}?auto=format&fit=crop&w=3840&q=90`}
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover object-[center_20%]"
+        />
+
+        {/* Warm overlay — lets the photo breathe while keeping text readable */}
         <div
           className="absolute inset-0"
           style={{
             background: `
-              radial-gradient(ellipse 80% 60% at 90% 10%, rgba(192,96,20,0.38) 0%, transparent 60%),
-              radial-gradient(ellipse 60% 50% at 10% 90%, rgba(242,166,90,0.18) 0%, transparent 55%),
-              linear-gradient(140deg, #120900 0%, #2C1A12 45%, #3d2215 100%)
+              radial-gradient(ellipse 80% 60% at 90% 10%, rgba(192,96,20,0.60) 0%, transparent 60%),
+              radial-gradient(ellipse 60% 50% at 10% 90%, rgba(242,166,90,0.30) 0%, transparent 55%),
+              linear-gradient(140deg, rgba(18,9,0,0.72) 0%, rgba(44,26,18,0.62) 45%, rgba(61,34,21,0.50) 100%)
             `,
           }}
         />

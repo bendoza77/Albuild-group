@@ -44,14 +44,22 @@ export const SERVICES_DATA = [
   },
 ]
 
-// ─── Confirmed Unsplash CDN base URLs (extracted from og:image on each photo page) ───
-// Append  ?auto=format&fit=crop&w=XXX&q=85  when rendering
-export const HERO_IMAGE    = 'https://images.unsplash.com/photo-1485083269755-a7b559a4fe5e'  // Cranes at golden sunset
-export const ABOUT_IMAGES  = [
-  'https://images.unsplash.com/photo-1535732759880-bbd5c7265e3f',            // Tower crane, low angle
-  'https://plus.unsplash.com/premium_photo-1682148826211-99809e7034eb',      // Construction site at dusk
-  'https://plus.unsplash.com/premium_photo-1681691912442-68c4179c530c',      // Construction professionals on site
-  'https://images.unsplash.com/photo-1694521787162-5373b598945c',            // Workers on active build
+// Unsplash free CDN — append ?auto=format&fit=crop&w=XXX&q=85 when rendering
+export const HERO_IMAGE   = 'https://images.unsplash.com/photo-1485083269755-a7b559a4fe5e'  // Cranes at golden sunset
+
+// 4K page-hero backgrounds (use w=3840 for full 4K)
+export const PAGE_HERO_IMAGES = {
+  about:    'https://images.unsplash.com/photo-1541888946425-d81bb19240f5', // Construction workers on site
+  projects: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab', // Looking up at a glass skyscraper
+  contact:  'https://images.unsplash.com/photo-1497366216548-37526070297c', // Modern building exterior
+  cta:      'https://images.unsplash.com/photo-1504307651254-35680f356dfd', // Active construction site wide
+}
+
+export const ABOUT_IMAGES = [
+  'https://images.unsplash.com/photo-1535732759880-bbd5c7265e3f',  // Tower crane, low angle
+  'https://images.unsplash.com/photo-1504307651254-35680f356dfd',  // Active construction site
+  'https://images.unsplash.com/photo-1503387762-592deb58ef4e',     // Construction blueprints & team
+  'https://images.unsplash.com/photo-1694521787162-5373b598945c',  // Workers on active build
 ]
 
 export const PROJECTS_DATA = [
@@ -62,8 +70,7 @@ export const PROJECTS_DATA = [
     location: 'Tskneti, Tbilisi',
     year: '2024',
     area: '850 m²',
-    // Luxury house with pool (confirmed: premium Unsplash residential)
-    image: 'https://plus.unsplash.com/premium_photo-1694475117121-0c14f8ddf7bb',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6', // Modern luxury villa
     featured: true,
   },
   {
@@ -73,8 +80,7 @@ export const PROJECTS_DATA = [
     location: 'Vake, Tbilisi',
     year: '2023',
     area: '4,200 m²',
-    // Two tall office towers with greenery (confirmed: premium Unsplash office buildings)
-    image: 'https://plus.unsplash.com/premium_photo-1676357175446-8e85f2205ea6',
+    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e', // Glass office tower
     featured: true,
   },
   {
@@ -84,8 +90,7 @@ export const PROJECTS_DATA = [
     location: 'Batumi, Adjara',
     year: '2024',
     area: '12,000 m²',
-    // Modern residential building 3D-render / architectural render (confirmed)
-    image: 'https://images.unsplash.com/photo-1661883964999-c1bcb57a7357',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00', // Modern residential high-rise
     featured: true,
   },
   {
@@ -158,28 +163,28 @@ export const TEAM_DATA = [
     name: 'Giorgi Kvirikashvili',
     role: 'CEO & Founder',
     bio: '20+ years leading major construction projects across the South Caucasus region with a vision for sustainable excellence.',
-    image: 'https://picsum.photos/seed/albuild-t1/400/400',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d',
   },
   {
     id: 2,
     name: 'Nino Lomidze',
     role: 'Chief Architect',
     bio: 'Award-winning architect with an international portfolio and a philosophy rooted in functional beauty.',
-    image: 'https://picsum.photos/seed/albuild-t2/400/400',
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2',
   },
   {
     id: 3,
     name: 'Davit Beridze',
     role: 'Head of Engineering',
     bio: 'Structural engineering specialist with 15+ years of experience on landmark residential and commercial projects.',
-    image: 'https://picsum.photos/seed/albuild-t3/400/400',
+    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a',
   },
   {
     id: 4,
     name: 'Mariam Jgerenaia',
     role: 'Director of Operations',
     bio: 'Operations leader ensuring every ALBuild project meets the highest standards of precision, safety, and timeliness.',
-    image: 'https://picsum.photos/seed/albuild-t4/400/400',
+    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956',
   },
 ]
 

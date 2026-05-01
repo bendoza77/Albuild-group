@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { CheckCircle2 } from 'lucide-react'
 import Container from '../../components/ui/Container'
 import SectionTitle from '../../components/ui/SectionTitle'
+import { ABOUT_IMAGES } from '../../utils/constants'
 
 const HIGHLIGHTS = [
   'Over 250 completed projects across Georgia',
@@ -12,57 +13,28 @@ const HIGHLIGHTS = [
   'Sustainable and eco-conscious construction methods',
 ]
 
-/* Construction-themed gradient panels */
-const PANELS = [
-  {
-    gradient: 'linear-gradient(140deg, #1a0e06 0%, #C06014 100%)',
-    label: 'Precision Engineering',
-    icon: '◈',
-    tall: true,
-  },
-  {
-    gradient: 'linear-gradient(140deg, #2C1A12 0%, #4a2810 100%)',
-    label: 'Quality Materials',
-    icon: '⬡',
-    tall: false,
-  },
-  {
-    gradient: 'linear-gradient(140deg, #3d2010 0%, #8a4418 100%)',
-    label: 'Expert Craftsmanship',
-    icon: '◉',
-    tall: false,
-  },
-  {
-    gradient: 'linear-gradient(140deg, #0e0804 0%, #2C1A12 60%, #C06014 100%)',
-    label: 'On-Time Delivery',
-    icon: '◈',
-    tall: true,
-  },
+const PANEL_LABELS = [
+  'Precision Engineering',
+  'Quality Materials',
+  'Expert Craftsmanship',
+  'On-Time Delivery',
 ]
 
-function ArchPanel({ panel }) {
+function PhotoPanel({ image, label }) {
   return (
-    <div
-      className="relative rounded-2xl overflow-hidden warm-shadow flex flex-col justify-end p-5 group"
-      style={{ background: panel.gradient }}
-    >
-      {/* Blueprint grid */}
-      <div
-        className="absolute inset-0 opacity-[0.07]"
-        style={{
-          backgroundImage: `linear-gradient(rgba(242,166,90,1) 1px, transparent 1px), linear-gradient(90deg, rgba(242,166,90,1) 1px, transparent 1px)`,
-          backgroundSize: '28px 28px',
-        }}
+    <div className="relative rounded-2xl overflow-hidden warm-shadow group w-full h-full">
+      <img
+        src={`${image}?auto=format&fit=crop&w=1200&q=90`}
+        alt={label}
+        className="absolute inset-0 w-full h-full object-cover transition-transform duration-600 group-hover:scale-105"
       />
-      {/* Large symbol */}
-      <div className="absolute top-4 right-4 text-white/10 font-display text-7xl font-bold select-none leading-none pointer-events-none">
-        {panel.icon}
-      </div>
+      {/* Dark gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent" />
       {/* Label */}
-      <div className="relative z-10">
+      <div className="absolute bottom-0 left-0 p-5 z-10">
         <div className="h-px w-8 bg-accent mb-2" />
-        <p className="font-body text-xs uppercase tracking-widest text-beige/70 font-semibold">
-          {panel.label}
+        <p className="font-body text-xs uppercase tracking-widest text-beige/80 font-semibold">
+          {label}
         </p>
       </div>
     </div>
@@ -83,16 +55,24 @@ export default function CompanyOverview() {
             transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
             className="relative"
           >
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-3 sm:gap-4">
               {/* Left column */}
-              <div className="space-y-4">
-                <div className="h-64"><ArchPanel panel={PANELS[0]} /></div>
-                <div className="h-40"><ArchPanel panel={PANELS[1]} /></div>
+              <div className="space-y-3 sm:space-y-4">
+                <div className="h-44 sm:h-56 lg:h-64">
+                  <PhotoPanel image={ABOUT_IMAGES[0]} label={PANEL_LABELS[0]} />
+                </div>
+                <div className="h-32 sm:h-36 lg:h-40">
+                  <PhotoPanel image={ABOUT_IMAGES[1]} label={PANEL_LABELS[1]} />
+                </div>
               </div>
               {/* Right column — offset */}
-              <div className="space-y-4 pt-8">
-                <div className="h-40"><ArchPanel panel={PANELS[2]} /></div>
-                <div className="h-64"><ArchPanel panel={PANELS[3]} /></div>
+              <div className="space-y-3 sm:space-y-4 pt-6 sm:pt-8">
+                <div className="h-32 sm:h-36 lg:h-40">
+                  <PhotoPanel image={ABOUT_IMAGES[2]} label={PANEL_LABELS[2]} />
+                </div>
+                <div className="h-44 sm:h-56 lg:h-64">
+                  <PhotoPanel image={ABOUT_IMAGES[3]} label={PANEL_LABELS[3]} />
+                </div>
               </div>
             </div>
 
@@ -102,7 +82,7 @@ export default function CompanyOverview() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="absolute -bottom-6 -right-4 bg-secondary text-beige rounded-2xl px-6 py-5 warm-shadow-lg"
+              className="absolute -bottom-6 -right-2 sm:-bottom-6 sm:-right-4 bg-secondary text-beige rounded-2xl px-5 py-4 sm:px-6 sm:py-5 warm-shadow-lg z-10"
             >
               <div className="font-display text-4xl font-bold text-accent">15+</div>
               <div className="font-body text-xs uppercase tracking-wider text-beige/70 mt-1">Years of Excellence</div>

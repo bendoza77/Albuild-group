@@ -2,36 +2,7 @@ import { motion } from 'framer-motion'
 import { MapPin, Calendar, Maximize2 } from 'lucide-react'
 import Badge from '../../components/ui/Badge'
 
-/* One gradient per category */
-const CATEGORY_GRADIENT = {
-  Residential: 'linear-gradient(140deg, #3d2010 0%, #C06014 100%)',
-  Commercial:  'linear-gradient(140deg, #1a0e06 0%, #4a2810 60%, #8a4418 100%)',
-  Industrial:  'linear-gradient(140deg, #0e0804 0%, #2C1A12 60%, #3d2010 100%)',
-}
-
-/* Subtle building silhouette unique per card */
-function CardBg({ index }) {
-  const shift = (index * 53) % 60
-  return (
-    <svg
-      className="absolute inset-0 w-full h-full opacity-[0.13] pointer-events-none"
-      viewBox="0 0 360 220"
-      preserveAspectRatio="xMidYMid slice"
-      aria-hidden="true"
-    >
-      <rect x={10 + shift}  y="50"  width="42" height="170" fill="white" />
-      <rect x={65 + shift}  y="20"  width="55" height="200" fill="white" />
-      <rect x={135 + shift} y="65"  width="38" height="155" fill="white" />
-      <rect x={185 + shift} y="10"  width="60" height="210" fill="white" />
-      <rect x={260 + shift} y="55"  width="45" height="165" fill="white" />
-      <rect x={315 + shift} y="30"  width="40" height="190" fill="white" />
-      <line x1="0" y1="217" x2="360" y2="217" stroke="white" strokeWidth="2" />
-    </svg>
-  )
-}
-
 export default function ProjectCard({ project, index = 0 }) {
-  const gradient = CATEGORY_GRADIENT[project.category] ?? CATEGORY_GRADIENT.Commercial
 
   return (
     <motion.article
@@ -43,20 +14,17 @@ export default function ProjectCard({ project, index = 0 }) {
       animate="rest"
       className="group rounded-2xl overflow-hidden bg-white warm-shadow hover:warm-shadow-xl transition-all duration-400 cursor-pointer"
     >
-      {/* Image area — gradient + architectural pattern */}
-      <div
-        className="relative h-56 overflow-hidden"
-        style={{ background: gradient }}
-      >
-        <CardBg index={index} />
-
-        {/* Large faded project number */}
-        <div className="absolute bottom-2 right-4 font-display font-bold text-[5rem] leading-none text-white/10 select-none pointer-events-none">
-          {String(index + 1).padStart(2, '0')}
-        </div>
+      {/* Image area — real project photo */}
+      <div className="relative h-52 sm:h-56 overflow-hidden">
+        {/* Actual project photo */}
+        <img
+          src={`${project.image}?auto=format&fit=crop&w=1400&q=90`}
+          alt={project.title}
+          className="absolute inset-0 w-full h-full object-cover object-[center_30%] transition-transform duration-500 group-hover:scale-105"
+        />
 
         {/* Gradient overlay for text legibility */}
-        <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-primary/70 via-primary/15 to-transparent" />
 
         {/* Warm tint on hover */}
         <motion.div

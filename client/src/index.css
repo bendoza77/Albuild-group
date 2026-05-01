@@ -81,15 +81,15 @@ img {
 }
 
 @utility warm-shadow {
-  box-shadow: 0 4px 24px rgba(44, 26, 18, 0.10);
+  box-shadow: 0 4px 24px rgba(192, 96, 20, 0.10);
 }
 
 @utility warm-shadow-lg {
-  box-shadow: 0 8px 48px rgba(44, 26, 18, 0.16);
+  box-shadow: 0 8px 48px rgba(192, 96, 20, 0.15);
 }
 
 @utility warm-shadow-xl {
-  box-shadow: 0 16px 64px rgba(44, 26, 18, 0.22);
+  box-shadow: 0 16px 64px rgba(192, 96, 20, 0.20);
 }
 
 @utility glass-warm {

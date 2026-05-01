@@ -55,7 +55,7 @@ export default function Testimonials() {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -40 }}
                 transition={{ duration: 0.4, ease: 'easeOut' }}
-                className="bg-white rounded-3xl p-8 md:p-12 warm-shadow-lg relative"
+                className="bg-white rounded-3xl p-8 md:p-12 warm-shadow-lg relative border border-accent/10"
               >
                 {/* Stars */}
                 <div className="flex items-center gap-1 mb-6">

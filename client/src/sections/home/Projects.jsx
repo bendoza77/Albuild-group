@@ -7,40 +7,12 @@ import Badge from '../../components/ui/Badge'
 import { PROJECTS_DATA } from '../../utils/constants'
 import { staggerContainer, fadeInUp } from '../../utils/animations'
 
-/* Warm gradient palettes per card index */
-const CARD_GRADIENTS = [
-  'linear-gradient(140deg, #1a0e06 0%, #3d2010 50%, #C06014 100%)',
-  'linear-gradient(140deg, #2C1A12 0%, #6b3515 60%, #3d2010 100%)',
-  'linear-gradient(140deg, #120a04 0%, #2C1A12 50%, #4a2810 100%)',
-]
-
-/* Abstract building-block pattern for card backgrounds */
-function CardPattern({ index }) {
-  const offset = index * 37
-  return (
-    <svg
-      className="absolute inset-0 w-full h-full opacity-[0.12]"
-      viewBox="0 0 400 280"
-      preserveAspectRatio="xMidYMid slice"
-      aria-hidden="true"
-    >
-      {/* Building silhouettes */}
-      <rect x={20 + offset % 30}  y="60"  width="55" height="220" fill="white" />
-      <rect x={90 + offset % 20}  y="30"  width="70" height="250" fill="white" />
-      <rect x={175 + offset % 25} y="80"  width="50" height="200" fill="white" />
-      <rect x={240 + offset % 15} y="20"  width="80" height="260" fill="white" />
-      <rect x={335 + offset % 10} y="70"  width="60" height="210" fill="white" />
-      {/* Grid lines */}
-      <line x1="0" y1="275" x2="400" y2="275" stroke="white" strokeWidth="2" />
-    </svg>
-  )
-}
 
 const FEATURED = PROJECTS_DATA.filter((p) => p.featured)
 
 export default function ProjectsPreview() {
   return (
-    <section className="py-24 bg-highlight/40">
+    <section className="py-24 bg-highlight/50">
       <Container>
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-14">
           <SectionTitle
@@ -83,21 +55,26 @@ export default function ProjectsPreview() {
                 i === 0 ? 'md:col-span-2' : ''
               }`}
             >
-              {/* Gradient background with building pattern */}
+              {/* Real project photo with gradient overlay */}
               <div
-                className={`relative overflow-hidden ${i === 0 ? 'h-80 md:h-96' : 'h-64 md:h-80'}`}
-                style={{ background: CARD_GRADIENTS[i % CARD_GRADIENTS.length] }}
+                className={`relative overflow-hidden ${i === 0 ? 'h-64 sm:h-80 md:h-96' : 'h-52 sm:h-64 md:h-80'}`}
               >
-                <CardPattern index={i} />
+                {/* Project photo */}
+                <img
+                  src={`${project.image}?auto=format&fit=crop&w=1800&q=90`}
+                  alt={project.title}
+                  className="absolute inset-0 w-full h-full object-cover object-[center_30%] transition-transform duration-700 group-hover:scale-105"
+                />
 
-                {/* Large faded project number */}
-                <div className="absolute bottom-4 right-5 font-display font-bold text-[6rem] leading-none text-white/10 select-none pointer-events-none">
-                  {String(i + 1).padStart(2, '0')}
-                </div>
+                {/* Dark gradient so bottom text stays legible */}
+                <div
+                  className="absolute inset-0"
+                  style={{ background: 'linear-gradient(to top, rgba(18,9,0,0.82) 25%, rgba(18,9,0,0.30) 65%, transparent 100%)' }}
+                />
 
                 {/* Warm hover tint */}
                 <motion.div
-                  className="absolute inset-0 bg-accent/15"
+                  className="absolute inset-0 bg-accent/20"
                   variants={{
                     rest: { opacity: 0 },
                     hover: { opacity: 1, transition: { duration: 0.35 } },
