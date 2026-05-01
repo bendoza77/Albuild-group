@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #2C1A12;
+  --color-secondary: #C06014;
+  --color-accent: #F2A65A;
+  --color-highlight: #F7E6D3;
+  --color-beige: #FAF6F0;
+  --color-warm-gray: #D6CCC2;
+  --color-dark: #1A1A1A;
+
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  color: #1a1a1a;
+  background-color: #faf6f0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Grain overlay */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23g)' opacity='1'/%3E%3C/svg%3E");
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #faf6f0; }
+::-webkit-scrollbar-thumb { background: #c06014; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #f2a65a; }
+
+/* Text selection */
+::selection {
+  background: #f2a65a;
+  color: #2c1a12;
+}
+
+/* Smooth image loading */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Custom utilities */
+@utility text-gradient {
+  background: linear-gradient(135deg, #f2a65a 0%, #c06014 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@utility text-gradient-light {
+  background: linear-gradient(135deg, #f7e6d3 0%, #f2a65a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@utility warm-shadow {
+  box-shadow: 0 4px 24px rgba(44, 26, 18, 0.10);
+}
+
+@utility warm-shadow-lg {
+  box-shadow: 0 8px 48px rgba(44, 26, 18, 0.16);
+}
+
+@utility warm-shadow-xl {
+  box-shadow: 0 16px 64px rgba(44, 26, 18, 0.22);
+}
+
+@utility glass-warm {
+  background: rgba(250, 246, 240, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+@utility glass-dark {
+  background: rgba(44, 26, 18, 0.80);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+@utility glow-accent {
+  box-shadow: 0 0 32px rgba(242, 166, 90, 0.35);
+}
+
+@utility section-padding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}

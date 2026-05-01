@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <!-- Background rounded square -->
+  <rect width="48" height="48" rx="11" fill="#2C1A12"/>
+
+  <!-- A-frame construction truss — the brand symbol -->
+  <!-- Full "A" silhouette: two legs + interior fill -->
+  <path d="M24 6 L7 42 H14.5 L24 18 L33.5 42 H41 L24 6Z" fill="#F2A65A"/>
+
+  <!-- Crossbar — terracotta accent that reads as the structural beam -->
+  <rect x="16" y="27.5" width="16" height="3.5" rx="1.75" fill="#C06014"/>
+
+  <!-- Foundation ground line — subtle warm white -->
+  <rect x="8" y="42" width="32" height="2" rx="1" fill="#F7E6D3" opacity="0.25"/>
+</svg>
