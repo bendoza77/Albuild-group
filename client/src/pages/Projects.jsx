@@ -8,7 +8,7 @@ import usePageTitle from '../hooks/usePageTitle'
 import { PAGE_HERO_IMAGES } from '../utils/constants'
 
 export default function Projects() {
-  usePageTitle('Our Projects')
+  usePageTitle('ჩვენი პროექტები')
   return (
     <motion.div {...pageTransition}>
       {/* Page hero */}
@@ -61,9 +61,9 @@ export default function Projects() {
             transition={{ delay: 0.4 }}
             className="flex items-center gap-2 font-body text-sm text-warm-gray"
           >
-            <Link to="/" className="hover:text-accent transition-colors">Home</Link>
+            <Link to="/" className="hover:text-accent transition-colors">მთავარი</Link>
             <span>/</span>
-            <span className="text-accent">Projects</span>
+            <span className="text-accent">პროექტები</span>
           </motion.div>
         </Container>
       </section>

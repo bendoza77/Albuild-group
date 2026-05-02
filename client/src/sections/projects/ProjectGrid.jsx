@@ -7,9 +7,9 @@ import ProjectFilter from './ProjectFilter'
 import { PROJECTS_DATA } from '../../utils/constants'
 
 export default function ProjectGrid() {
-  const [activeFilter, setActiveFilter] = useState('All')
+  const [activeFilter, setActiveFilter] = useState('ყველა')
 
-  const filtered = activeFilter === 'All'
+  const filtered = activeFilter === 'ყველა'
     ? PROJECTS_DATA
     : PROJECTS_DATA.filter((p) => p.category === activeFilter)
 
@@ -18,9 +18,9 @@ export default function ProjectGrid() {
       <Container>
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-12">
           <SectionTitle
-            eyebrow="Our Portfolio"
-            title="All Projects"
-            subtitle={`Showing ${filtered.length} project${filtered.length !== 1 ? 's' : ''}${activeFilter !== 'All' ? ` in ${activeFilter}` : ''}`}
+            eyebrow="ჩვენი პორტფოლიო"
+            title="ყველა პროექტი"
+            subtitle={`ნაჩვენებია ${filtered.length} პროექტი${activeFilter !== 'ყველა' ? ` — ${activeFilter}` : ''}`}
           />
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -52,7 +52,7 @@ export default function ProjectGrid() {
             animate={{ opacity: 1 }}
             className="text-center py-24"
           >
-            <p className="font-body text-warm-gray text-lg">No projects found in this category.</p>
+            <p className="font-body text-warm-gray text-lg">ამ კატეგორიაში პროექტი არ მოიძებნა.</p>
           </motion.div>
         )}
       </Container>

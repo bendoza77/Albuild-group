@@ -21,7 +21,7 @@ const LinkedinIcon = () => (
   </svg>
 )
 
-const SERVICES = ['Residential Construction', 'Commercial Buildings', 'Industrial Facilities', 'Renovation & Restoration', 'Project Management', 'Interior Finishing']
+const SERVICES = ['საცხოვრებელი მშენებლობა', 'კომერციული შენობები', 'სამრეწველო ობიექტები', 'რემონტი და რეკონსტრუქცია', 'პროექტის მენეჯმენტი', 'ინტერიერის მოწყობა']
 
 export default function Footer() {
   return (
@@ -31,8 +31,8 @@ export default function Footer() {
         <Container>
           <div className="py-10 flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
-              <p className="font-body text-warm-gray text-sm mb-1 uppercase tracking-widest">Ready to build?</p>
-              <p className="font-display text-3xl font-bold text-beige">Let's start your project today.</p>
+              <p className="font-body text-warm-gray text-sm mb-1 uppercase tracking-widest">მზად ხართ მშენებლობისთვის?</p>
+              <p className="font-display text-3xl font-bold text-beige">დავიწყოთ თქვენი პროექტი დღესვე.</p>
             </div>
             <Link to="/contact">
               <motion.span
@@ -40,7 +40,7 @@ export default function Footer() {
                 whileTap={{ scale: 0.97 }}
                 className="inline-flex items-center gap-2 bg-accent text-primary font-body font-bold px-7 py-3.5 rounded-lg text-base cursor-pointer"
               >
-                Get a Free Consultation
+                მიიღეთ უფასო კონსულტაცია
                 <ArrowRight className="w-4 h-4" />
               </motion.span>
             </Link>
@@ -57,7 +57,7 @@ export default function Footer() {
               <Logo variant="light" size="md" />
             </div>
             <p className="font-body text-warm-gray text-sm leading-relaxed mb-6">
-              Georgia's premier construction company delivering precision-engineered projects since 2009.
+              საქართველოს წამყვანი სამშენებლო კომპანია, რომელიც 2009 წლიდან ახორციელებს სიზუსტით შესრულებულ პროექტებს.
             </p>
             <div className="flex items-center gap-3">
               {[
@@ -79,7 +79,7 @@ export default function Footer() {
 
           {/* Navigation */}
           <div>
-            <h4 className="font-body font-semibold text-sm uppercase tracking-widest text-accent mb-5">Navigation</h4>
+            <h4 className="font-body font-semibold text-sm uppercase tracking-widest text-accent mb-5">ნავიგაცია</h4>
             <ul className="space-y-3">
               {NAV_LINKS.map((link) => (
                 <li key={link.path}>
@@ -94,7 +94,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="font-body font-semibold text-sm uppercase tracking-widest text-accent mb-5">Services</h4>
+            <h4 className="font-body font-semibold text-sm uppercase tracking-widest text-accent mb-5">სერვისები</h4>
             <ul className="space-y-3">
               {SERVICES.map((s) => (
                 <li key={s}>
@@ -109,7 +109,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-body font-semibold text-sm uppercase tracking-widest text-accent mb-5">Contact</h4>
+            <h4 className="font-body font-semibold text-sm uppercase tracking-widest text-accent mb-5">კონტაქტი</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-accent mt-0.5 shrink-0" />
@@ -137,10 +137,10 @@ export default function Footer() {
         <Container>
           <div className="py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
             <p className="font-body text-warm-gray text-xs">
-              © {new Date().getFullYear()} ALBuild Group. All rights reserved.
+              © {new Date().getFullYear()} ALBuild Group. ყველა უფლება დაცულია.
             </p>
             <div className="flex items-center gap-5">
-              {['Privacy Policy', 'Terms of Service'].map((item) => (
+              {['კონფიდენციალურობის პოლიტიკა', 'მომსახურების პირობები'].map((item) => (
                 <a key={item} href="#" className="font-body text-warm-gray hover:text-accent text-xs transition-colors">
                   {item}
                 </a>

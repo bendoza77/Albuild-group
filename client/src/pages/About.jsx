@@ -11,7 +11,7 @@ import { pageTransition } from '../utils/animations'
 import { PAGE_HERO_IMAGES } from '../utils/constants'
 
 export default function About() {
-  usePageTitle('About Us')
+  usePageTitle('ჩვენს შესახებ')
   return (
     <motion.div {...pageTransition}>
       {/* Page hero */}
@@ -64,9 +64,9 @@ export default function About() {
             transition={{ delay: 0.4 }}
             className="flex items-center gap-2 font-body text-sm text-warm-gray"
           >
-            <Link to="/" className="hover:text-accent transition-colors">Home</Link>
+            <Link to="/" className="hover:text-accent transition-colors">მთავარი</Link>
             <span>/</span>
-            <span className="text-accent">About</span>
+            <span className="text-accent">ჩვენს შესახებ</span>
           </motion.div>
         </Container>
       </section>
@@ -81,8 +81,8 @@ export default function About() {
         <Container>
           <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
             <div>
-              <p className="font-body text-secondary text-sm uppercase tracking-widest font-semibold mb-1">Ready to work together?</p>
-              <p className="font-display text-2xl font-bold text-primary">Let's discuss your project.</p>
+              <p className="font-body text-secondary text-sm uppercase tracking-widest font-semibold mb-1">მზად ხართ ერთად მუშაობისთვის?</p>
+              <p className="font-display text-2xl font-bold text-primary">განვიხილოთ თქვენი პროექტი.</p>
             </div>
             <Link to="/contact">
               <motion.span
@@ -90,7 +90,7 @@ export default function About() {
                 whileTap={{ scale: 0.96 }}
                 className="inline-flex items-center gap-2 bg-secondary text-beige font-body font-bold px-7 py-3.5 rounded-xl text-sm cursor-pointer"
               >
-                Contact Us <ArrowRight className="w-4 h-4" />
+                დაგვიკავშირდით <ArrowRight className="w-4 h-4" />
               </motion.span>
             </Link>
           </div>

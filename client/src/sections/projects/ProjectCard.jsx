@@ -72,7 +72,7 @@ export default function ProjectCard({ project, index = 0 }) {
         </div>
         <div className="h-px bg-warm-gray/20 mb-4" />
         <div className="flex items-center justify-between">
-          <span className="font-body text-xs text-warm-gray uppercase tracking-wider">View Details</span>
+          <span className="font-body text-xs text-warm-gray uppercase tracking-wider">დეტალების ნახვა</span>
           <motion.div
             className="w-7 h-7 rounded-lg bg-highlight flex items-center justify-center"
             variants={{

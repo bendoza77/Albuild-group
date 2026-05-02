@@ -43,9 +43,9 @@ export default function Team() {
     <section className="py-24 bg-highlight/40">
       <Container>
         <SectionTitle
-          eyebrow="The People"
-          title="Meet Our Leadership"
-          subtitle="A team of dedicated professionals committed to delivering excellence on every project."
+          eyebrow="ჩვენი გუნდი"
+          title="გაიცანით ჩვენი ხელმძღვანელობა"
+          subtitle="პროფესიონალ სპეციალისტთა გუნდი, რომელიც ყოველ პროექტზე სრულყოფილების მიღწევას ისახავს მიზნად."
           centered
           className="mb-16"
         />

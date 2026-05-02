@@ -9,7 +9,7 @@ import usePageTitle from '../hooks/usePageTitle'
 import { PAGE_HERO_IMAGES } from '../utils/constants'
 
 export default function Contact() {
-  usePageTitle('Contact Us')
+  usePageTitle('კონტაქტი')
   return (
     <motion.div {...pageTransition}>
       {/* Page hero */}
@@ -62,9 +62,9 @@ export default function Contact() {
             transition={{ delay: 0.4 }}
             className="flex items-center gap-2 font-body text-sm text-warm-gray"
           >
-            <Link to="/" className="hover:text-accent transition-colors">Home</Link>
+            <Link to="/" className="hover:text-accent transition-colors">მთავარი</Link>
             <span>/</span>
-            <span className="text-accent">Contact</span>
+            <span className="text-accent">კონტაქტი</span>
           </motion.div>
         </Container>
       </section>
@@ -75,9 +75,9 @@ export default function Contact() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
               <SectionTitle
-                eyebrow="Contact Us"
-                title="Start the Conversation"
-                subtitle="Share your vision and we'll respond within 24 hours with a tailored consultation."
+                eyebrow="დაგვიკავშირდით"
+                title="დავიწყოთ საუბარი"
+                subtitle="გაგვიზიარეთ თქვენი ხედვა და ჩვენ 24 საათის განმავლობაში დაგიკავშირდებით ინდივიდუალური კონსულტაციისთვის."
                 className="mb-8"
               />
               <ContactForm />

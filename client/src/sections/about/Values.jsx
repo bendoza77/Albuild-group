@@ -8,12 +8,12 @@ import { staggerContainer } from '../../utils/animations'
 const ICON_MAP = { Star, Shield, Lightbulb, ShieldCheck }
 
 const TIMELINE_EVENTS = [
-  { year: '2009', title: 'Foundation', text: 'Established in Tbilisi with a mission to redefine construction standards in Georgia.' },
-  { year: '2012', title: 'Commercial Breakthrough', text: 'Delivered our first large-scale commercial building, earning industry recognition.' },
-  { year: '2016', title: 'Regional Expansion', text: 'Extended operations across Batumi, Kutaisi, and Rustavi.' },
-  { year: '2019', title: '10-Year Milestone', text: 'Celebrated a decade of excellence with 150+ completed projects.' },
-  { year: '2022', title: 'Green Building Program', text: 'Launched our sustainability initiative integrating eco-conscious methods.' },
-  { year: '2024', title: 'Present Day', text: 'Over 250 projects and growing — Georgia\'s most trusted builder.' },
+  { year: '2009', title: 'დაფუძნება', text: 'დაარსდა თბილისში მისიით — ხელახლა განეჩინოს სამშენებლო სტანდარტები საქართველოში.' },
+  { year: '2012', title: 'პირველი მსხვილი კომერციული პროექტი', text: 'ავაშენეთ პირველი მსხვილი კომერციული შენობა, რამაც ხარისხისა და სიზუსტის კუთხით ჩვენი რეპუტაცია დაამკვიდრა.' },
+  { year: '2016', title: 'რეგიონული გაფართოება', text: 'გავავრცელეთ საქმიანობა ბათუმში, ქუთაისსა და რუსთავში.' },
+  { year: '2019', title: '10 წლის იუბილე', text: 'სრულყოფის ათი წელი 150-ზე მეტი დასრულებული პროექტით.' },
+  { year: '2022', title: 'მდგრადობის ინიციატივა', text: 'გავუშვით მწვანე მშენებლობის პროგრამა — ვაინტეგრირეთ მდგრადი და ეკოლოგიურად გაცნობიერებული მეთოდები.' },
+  { year: '2024', title: 'დღეს', text: '250-ზე მეტი პროექტი და კვლავ ვიზრდებით — საქართველოს ყველაზე სანდო სამშენებლო კომპანია.' },
 ]
 
 export default function Values() {
@@ -28,9 +28,9 @@ export default function Values() {
         />
         <Container className="relative z-10">
           <SectionTitle
-            eyebrow="Our Principles"
-            title="Built on Values"
-            subtitle="The beliefs that drive every decision we make and every building we create."
+            eyebrow="ჩვენი პრინციპები"
+            title="ღირებულებებზე დაფუძნებული"
+            subtitle="რწმენები, რომლებიც განსაზღვრავს ჩვენს ყოველ გადაწყვეტილებასა და ყოველ შენობას, რომელსაც ვქმნით."
             centered
             light
             className="mb-16"
@@ -75,9 +75,9 @@ export default function Values() {
       <section className="py-24 bg-beige">
         <Container>
           <SectionTitle
-            eyebrow="Our Journey"
-            title="A Legacy of Building"
-            subtitle="From a small team with big ambitions to Georgia's premier construction group."
+            eyebrow="ჩვენი გზა"
+            title="სამშენებლო მემკვიდრეობა"
+            subtitle="პატარა გუნდიდან დიდი ამბიციებით — საქართველოს წამყვანი სამშენებლო ჯგუფამდე."
             centered
             className="mb-16"
           />

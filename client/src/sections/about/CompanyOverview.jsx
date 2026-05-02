@@ -86,7 +86,7 @@ export default function CompanyOverview() {
               className="absolute -bottom-6 -right-2 sm:-bottom-6 sm:-right-4 bg-secondary text-beige rounded-2xl px-5 py-4 sm:px-6 sm:py-5 warm-shadow-lg z-10"
             >
               <div className="font-display text-4xl font-bold text-accent">15+</div>
-              <div className="font-body text-xs uppercase tracking-wider text-beige/70 mt-1">Years of Excellence</div>
+              <div className="font-body text-xs uppercase tracking-wider text-beige/70 mt-1">წელი სრულყოფილებაში</div>
             </motion.div>
           </motion.div>
 
@@ -105,7 +105,7 @@ export default function CompanyOverview() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="font-body text-warm-gray leading-relaxed mb-8 mt-2"
             >
-              We believe that great buildings are the result of great partnerships. Our collaborative approach means we listen deeply, plan meticulously, and execute with uncompromising precision — ensuring every structure we deliver stands as a testament to the trust our clients place in us.
+              გვჯერა, რომ შესანიშნავი შენობები შესანიშნავი პარტნიორობის შედეგია. ჩვენი თანამშრომლობითი მიდგომა ნიშნავს — ღრმად მოვისმინოთ, ფრთხილად დავგეგმოთ და განვახორციელოთ შეუვალი სიზუსტით — ისე, რომ ყოველი ნაგებობა, რომელსაც ვაბარებთ, წარმოადგენდეს ჩვენს კლიენტებთან ურთიერთნდობის დასტურს.
             </motion.p>
 
             <motion.ul className="space-y-3 mb-10">

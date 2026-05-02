@@ -3,10 +3,10 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-react'
 import { CONTACT_INFO } from '../../utils/constants'
 
 const INFO_ITEMS = [
-  { icon: MapPin, label: 'Address', value: CONTACT_INFO.address },
-  { icon: Phone, label: 'Phone', value: CONTACT_INFO.phone, href: `tel:${CONTACT_INFO.phone}` },
-  { icon: Mail, label: 'Email', value: CONTACT_INFO.email, href: `mailto:${CONTACT_INFO.email}` },
-  { icon: Clock, label: 'Working Hours', value: CONTACT_INFO.hours },
+  { icon: MapPin, label: 'მისამართი', value: CONTACT_INFO.address },
+  { icon: Phone, label: 'ტელეფონი', value: CONTACT_INFO.phone, href: `tel:${CONTACT_INFO.phone}` },
+  { icon: Mail, label: 'ელ. ფოსტა', value: CONTACT_INFO.email, href: `mailto:${CONTACT_INFO.email}` },
+  { icon: Clock, label: 'სამუშაო საათები', value: CONTACT_INFO.hours },
 ]
 
 export default function MapSection() {
@@ -68,7 +68,7 @@ export default function MapSection() {
         className="inline-flex items-center gap-2 font-body text-sm text-secondary hover:text-accent font-semibold transition-colors"
       >
         <MapPin className="w-4 h-4" />
-        Open in Google Maps →
+        Google Maps-ზე გახსნა →
       </motion.a>
     </div>
   )
